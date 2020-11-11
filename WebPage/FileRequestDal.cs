@@ -7,6 +7,9 @@ using System.IO;
 
 namespace WebPage
 {
+    /// <summary>
+    /// Data layer class which handles reading from files.
+    /// </summary>
     class FileRequestDal : IDataLayer
     {
         public string GetData(string path)

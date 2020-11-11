@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace WebPage
 {
+    /// <summary>
+    /// Manager class that handles all request made from the user.
+    /// </summary>
     class RequestManager
     {
         IDataLayer dl;
