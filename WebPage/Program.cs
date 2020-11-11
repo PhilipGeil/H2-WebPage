@@ -11,10 +11,14 @@ namespace WebPage
         static void Main(string[] args)
         {
 
-            RequestManager r = new RequestManager(new WebRequestDal());
-            Console.WriteLine("Indtast url");
-            Console.WriteLine(r.GetData("https://" + Console.ReadLine()));
-            Console.ReadKey();
+            RequestManager r = new RequestManager(new FileRequestDal());
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine("Indtast url");
+                Console.WriteLine(r.GetData(Console.ReadLine()));
+                Console.ReadKey();
+            }
         }
     }
 }
