@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace WebPage
 {
+    /// <summary>
+    /// Class which handles web requests.
+    /// </summary>
     class WebRequestDal : IDataLayer
     {
         public string GetData(string path)

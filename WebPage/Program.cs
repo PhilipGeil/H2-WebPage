@@ -13,7 +13,7 @@ namespace WebPage
 
             RequestManager r = new RequestManager(new WebRequestDal());
             Console.WriteLine("Indtast url");
-            Console.WriteLine(r.GetData("https://" + Console.ReadLine()));
+            Console.WriteLine(r.GetData(Console.ReadLine()));
             Console.ReadKey();
         }
     }
